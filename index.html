@@ -7,14 +7,21 @@
     <title>Pinch Of Yum Recipes</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&family=Trirong:wght@800;900&display=swap">
+    <a href="#"><img id="logo" src="https://www.pngitem.com/pimgs/m/87-877725_recipes-png-transparent-png.png"></a>
+    
 </head>
 <body>  
     <div class="topnav">
       
-        <a class="active" href="#home">Home</a>
+        <!-- <a class="active" href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
-        <a href="#recipes">Recipes</a>
+        <a href="#recipes">Recipes</a> -->
+        <button id="homebutton">Home</button>
+        <button id="aboutbutton">About</button>
+        <button id="contactbutton">Contact</button>
+        <button id="recipebutton">Recipes</button>
+        <p id="pabout"></p>
       </div>  
         <div class="search-container">
             <input
@@ -25,50 +32,64 @@
         <button id="search-btn">Search</button>
       </div>
       <div id="result"></div>
-      <p>Recipe of the day</p>
+    </div> 
     <div class="recipe_container">
+      <div>
+        <h3>Recipe of the day</h3>
+        <p id ="recipename"></p>
+        <img id="todaysimg"src="" alt="">
+        <hr>
+        <ul id="recipe-list">
+          
+      </ul>
+     </div>
+      <div class="recipe_specs">
       <div class="Chocolate">
-        <img src="" alt="">
-        <h6>
+        <!-- <img id="recipe_image" src="" > -->
+        <h3 id="recipe_head">
+          Instructions
+        </h3>
+        <input type="hidden" id="recipe_id">
+        <p id="recipe_descri">
+
+        </p>
+      </div>
+      <!-- <div class="Chocolate">
+        <img id="recipe_image" src="" alt="">
+        <h6 id="recipe_head">         
+        </h6>
+        <input type="hidden" id="recipe_id">
+        <p id="recipe_descr">
+          2 cups cream 120 grams dark chocolate, chopped 2 bags of earl grey tea 6 egg yolks 
+          3 Tablespoons of sugar 1/2 cup whippinG
+        </p>
+      </div> -->
+      <div class="Chocolate">
+        <!-- <img id="recipe_image" src="" alt=""> -->
+        <h3 id="recipe_head">
+          Ingredients        
+        </h3>
+        <input type="hidden" id="recipe_id">
+        <ul id ='gredient'></ul>
+      
+          <!-- 2 cups cream 120 grams dark chocolate, chopped 2 bags of earl grey tea 6 egg yolks  -->
+          <!-- 3 Tablespoons of sugar 1/2 cup whippinG -->
+        </p>
+      </div>
+      <!-- <div class="Chocolate">
+        <img id="recipe_image" src="" alt="">
+        <h6 id="recipe_head">
           
         </h6>
-        <p>
+        <input type="hidden" id="recipe_id">
+        <p id="recipe_descr">
           2 cups cream 120 grams dark chocolate, chopped 2 bags of earl grey tea 6 egg yolks 
           3 Tablespoons of sugar 1/2 cup whippinG
         </p>
-      </div>
-      <div class="Chocolate">
-        <img src="" alt="">
-        <h6>
-          Chocolate Earl Grey Pots
-        </h6>
-        <p>
-          2 cups cream 120 grams dark chocolate, chopped 2 bags of earl grey tea 6 egg yolks 
-          3 Tablespoons of sugar 1/2 cup whippinG
-        </p>
-      </div>
-      <div class="Chocolate">
-        <img src="" alt="">
-        <h6>
-          Chocolate Earl Grey Pots
-        </h6>
-        <p>
-          2 cups cream 120 grams dark chocolate, chopped 2 bags of earl grey tea 6 egg yolks 
-          3 Tablespoons of sugar 1/2 cup whippinG
-        </p>
-      </div>
-      <div class="Chocolate">
-        <img src="" alt="">
-        <h6>
-          Chocolate Earl Grey Pots
-        </h6>
-        <p>
-          2 cups cream 120 grams dark chocolate, chopped 2 bags of earl grey tea 6 egg yolks 
-          3 Tablespoons of sugar 1/2 cup whippinG
-        </p>
+      </div> -->
       </div>
     </div>
-    <img src="https://i.pinimg.com/564x/6f/48/52/6f48521251136531eed37fa42bcebdc8.jpg" alt="">
+    <!-- <img width ="40%" height ="40%" src="https://lh3.googleusercontent.com/cQJxM-JUmTmY5qvmbnPn7Cs7k0b58tiGkTfRfqDOfRUKhxdyS65ZqVKDOr2PM7q2WD_atCZUlhKKHxpX70eLIVijpKSGs6d3y_NqDKLWVyrGfF0DwftFet62OeaHlQKH1OvH3uZwTzcalyR4xGmPbjq-PWxsmcH90AZcHuilsP_ENND6OKf8TPabqDn5O_eFhgMrbRgYAxNRaY2tUqYDmUPr3mQFzsph_L2rHlkvhde-WdTHhWlHYN8oPFwDt9UaWCNP5xUW48iEKl2RwtDLUKA3udWz9gdzbVL7XDTptbnRsSgot1Z7yes9gtVOGgXtoELC-oU9JjlG09R7CN-m5a30Hr3sCBlDf49aOc96oMyL9JHUuCoIfQG0GMCtHa1TX8s_bDZ-HTwnujY45vPUfCj4yFEAM91Aex0aoWKZo1p_G9eQs_UgP-aMe2rawyXAZd3iw77TI2vRID81_oZbPXqr_s5_rattwHNFeAB-oVXrvuB7QEVT5jronwghVi0lwNHKGPeGEc1W6cGvxZLaSC2OqKLJrmcAmtYw3rb5CUUN3zzEjFzNkevAUvb3l1hDf3-Tn3UVqAXe_KB1Jx0kWczKx_gvg3-DQ7RBTD-K30TwoZCx0pR3EHyWIdI35gEIkx8pMVCzybEFp783nOlP8lfBMVljSWLD4MbIJCooKfTAp_GaDD_rChWYHzaJCkAWWcy7xxBDGPqOjPnnV_n1dkwyu85MwDcc3RguodQTKDwvl8TrZ5lzs_Wskbir4vjD8csUNShaKpETohXamjpMdLBdTLMyaBkuj4xofJo1j0JgYRepHMn3qBYVwR0ZibYPlzU=w750-h563-no?authuser=0" alt=""> -->
     <script src="script.js"></script>
 </body>
 </html>
